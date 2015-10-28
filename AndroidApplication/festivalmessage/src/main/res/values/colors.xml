@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="black">#000000</color>
+    <color name="red">#ff0000</color>
+    <color name="shallow_red2">#ff7777</color>
+    <color name="shallow_red">#ffaaaa</color>
+    <color name="white_red">#ffeeee</color>
+    <color name="white">#ffffff</color>
+    <color name="shadow">#eeeeee</color>
+</resources>
+
+<!--<color name="greenblue">#0ddcff</color> -->

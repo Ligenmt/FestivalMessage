@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ligenmt.festivalmessage.AddMessageActivity">
+
+    <EditText
+        android:id="@+id/et_content"
+        android:inputType="textMultiLine"
+        android:padding="3dp"
+        android:gravity="top"
+        android:ems="10"
+        android:hint="写下你的祝福语"
+        android:layout_width="match_parent"
+        android:layout_height="200dp" />
+    <LinearLayout
+        android:layout_below="@+id/et_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/linearLayout">
+        <Button
+            android:id="@+id/btn_save"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="3dp"
+            android:textSize="21dp"
+            android:background="@drawable/button_normal"
+            android:text="保存"/>
+
+        <Button
+            android:id="@+id/btn_clear"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="3dp"
+            android:textSize="21dp"
+            android:background="@drawable/button_normal"
+            android:text="清除"/>
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="3dp"
+            android:textSize="21dp"
+            android:background="@drawable/button_normal"
+            android:text="取消"/>
+    </LinearLayout>
+
+
+</RelativeLayout>

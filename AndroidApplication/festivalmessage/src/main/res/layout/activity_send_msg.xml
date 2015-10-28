@@ -1,0 +1,159 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/shadow">
+
+
+    <LinearLayout
+        android:id="@+id/ll_send_msg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/et_content"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@drawable/message_bg"
+            android:gravity="top"
+            android:scrollbarStyle="insideInset"
+            android:text=""
+            android:textColor="@color/black" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+
+
+            <Button
+                android:id="@+id/btn_add_contact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:padding="2dp"
+                android:background="@drawable/selector_button"
+                android:text="添加"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:drawableLeft="@mipmap/icon_favorite"
+                />
+
+            <Button
+                android:id="@+id/btn_send"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/selector_button"
+                android:text="发送"
+                android:textColor="@color/white"
+                android:drawableLeft="@mipmap/icon_to_send"
+                android:textSize="20sp"
+                android:layout_marginBottom="10dp"/>
+
+        </LinearLayout>
+
+        <ScrollView
+            android:id="@+id/sv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.ligenmt.festivalmessage.FlowLayout
+                android:id="@+id/fl_contacts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </com.ligenmt.festivalmessage.FlowLayout>
+
+        </ScrollView>
+
+
+
+    </LinearLayout>
+
+
+    <ProgressBar
+        android:id="@+id/pb"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/btn_share"
+        android:padding="2dp"
+        android:src="@mipmap/icon_share"
+        android:scaleType="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:backgroundTint="@color/red"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="15dp"
+        />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/btn_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/icon_arrow_left"
+        android:padding="2dp"
+        app:backgroundTint="@color/red"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="15dp"/>
+    <!--
+        <LinearLayout
+            android:id="@+id/ll_bottom_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white">
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+                >
+
+                <Button
+                    android:id="@+id/btn_share_wx"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableTop="@mipmap/icon_wx"
+                    android:background="@android:color/transparent"
+                    android:text="微信"/>
+
+                <Button
+                    android:id="@+id/btn_share_timeline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableTop="@mipmap/icon_timeline"
+                    android:background="@android:color/transparent"
+                    android:text="朋友圈"/>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_cancel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:background="@drawable/selector_button"
+                android:text="取消"/>
+
+        </LinearLayout>
+        -->
+</RelativeLayout>
